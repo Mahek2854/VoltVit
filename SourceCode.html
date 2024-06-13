@@ -1,0 +1,183 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>VoltVit</title>
+    <style></style>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+        background-color: black;
+        height:3000px;
+    }
+    .header{
+        position:sticky;
+        top:0;
+    }
+    .left{
+        display:inline-block;
+        position:sticky;top:10px;
+        left:3%;
+        margin:3px;
+        font-size: xx-large;
+        width:20%;
+    }
+    .left img{
+        width:20%;
+        filter:invert(100%);
+    }
+
+    .mid{
+        width:50%;
+        margin: 12px auto;
+        position: relative;
+        left:25%;
+        top:2px;
+    }
+    .right{
+        display:flex;
+        position: absolute;top:10px;right:3%;margin:2px;
+        width: 17%;
+        text-align: center
+    }
+    .left, .right, .mid {
+        position: fixed;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color:white;
+        text-decoration: none;
+        padding:20px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        color:rgb(221, 144, 13);
+    }
+    #heading{
+        color:rgb(221, 144, 13);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        position:relative;
+        bottom:70px;
+        left:80px;
+        font-size:150%;
+    }
+    .fa {
+        padding: 10px;
+        font-size: 30px;
+        width: 40px;
+        text-align: center;
+        text-decoration: none;
+        color:aliceblue;
+        display:inline-block;
+        position:relative;
+        right:-100%;
+    }
+    .fa:hover{
+        color:rgb(221, 144, 13);
+    }
+    .fa-facebook{
+        color:white;
+    }
+    .fa-twitter{
+        color:white;
+    }
+    .fa-instagram{
+        color:white;
+    }
+    .icon {
+        display: inline-block;
+        margin-right: -20px;  /* Reduce spacing between icons */
+    }
+    .container{
+        color:white;
+        font-size:300%;
+        position:relative;top:3%;right:3%;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        float:right;
+        line-height: 200%;
+        animation-name: mahek1;
+        animation-duration: 3s;
+        animation-iteration-count: 3s;
+       
+    }
+    
+    @keyframes mahek1{
+        from {
+            width:200px;
+        }
+        to{
+            width:400px;
+        }
+    }
+    .h1{
+        position:fixed;
+        text-align: right;
+    }
+    #j{
+        color:rgb(221, 144, 13);
+    }
+    #myVideoContainer {
+        position: relative;
+        top:3%;
+        height:10vh;
+        z-index: -1; /* Ensures the video stays behind other content */
+    }
+    #myVideo {
+        width: 100%;
+        height: auto;
+        min-height: 100%; /* Ensure video covers entire viewport */
+    }
+</style>
+<body>
+    <div id="myVideoContainer">
+        <video autoplay muted loop id="myVideo">
+            <source src="gym.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header class="header">
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div id="heading">VoltVit</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness </a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Explore</a></li>
+            </ul>
+        </div>
+        <div class="right">
+                <div class="icon">
+                    <i class="fa fa-user"></i>
+                </div>
+            <div class="icon">
+                <i class="fa fa-facebook"></i>
+            </div>
+            <div class="icon">
+                <i class="fa fa-instagram"></i>
+            </div>
+            <div class="icon">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1><span id="j">D</span>ecide.</h1>
+        <h1><span id="j">C</span>ommit.</h1>
+        <h1><span id="j">S</span>uceed.</h1>
+    </div>
+</body>
+</html>
